@@ -12,7 +12,7 @@ export class WsJwtGuard implements CanActivate {
 
     try {
       const payload = this.jwtService.verify(token);
-      client.user = payload;  // Anexa o usuário ao cliente
+      client.user = payload;
       return true;
     } catch (error) {
       throw new WsException('Token inválido');
