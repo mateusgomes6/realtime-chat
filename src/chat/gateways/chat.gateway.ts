@@ -22,4 +22,10 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   @SubscribeMessage('joinRoom')
   async joinRoom(client: Socket, roomId: string) {
     await this.chatService.joinRoom(client, roomId);
+  }
+  @SubscribeMessage('sendMessage')
+  async sendMessage(client: Socket, payload: { roomId: string; text: string }) {
+    const message = await this.chatService.saveMessage(payload, client);
+    this.server.to(payload.roomId).emit('newMessage', message);
+  }
 }
