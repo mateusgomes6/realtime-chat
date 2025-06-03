@@ -46,25 +46,25 @@ src/
 └── main.ts                   
 ```
 ## ✨ Features
--Real-time messaging with WebSockets (Socket.io).
--JWT authentication for WebSocket connections.
--Room-based chats and private messaging.
--Microservice architecture for notifications (RabbitMQ/Kafka).
--Redis-backed queues (@nestjs/bull) for async email/SMS notifications.
--Modular and scalable codebase following NestJS best practices.
+- Real-time messaging with WebSockets (Socket.io).
+- JWT authentication for WebSocket connections.
+- Room-based chats and private messaging.
+- Microservice architecture for notifications (RabbitMQ/Kafka).
+- Redis-backed queues (@nestjs/bull) for async email/SMS notifications.
+- Modular and scalable codebase following NestJS best practices.
 ## 📦 Tech Stack
--Backend: NestJS, TypeORM, Socket.io
--Authentication: JWT, Passport.js
--Microservices: RabbitMQ/Kafka
--Queues: Redis + Bull
--Database: PostgreSQL/MySQL (or any TypeORM-supported DB)
--APIs: REST (optional) + WebSockets
+- Backend: NestJS, TypeORM, Socket.io
+- Authentication: JWT, Passport.js
+- Microservices: RabbitMQ/Kafka
+- Queues: Redis + Bull
+- Database: PostgreSQL/MySQL (or any TypeORM-supported DB)
+- APIs: REST (optional) + WebSockets
 🛠 Setup & Installation
 ### Prerequisites
--Node.js (v18+)
--PostgreSQL/MySQL
--Redis (for queues)
--RabbitMQ/Kafka (for notifications microservice)
+- Node.js (v18+)
+- PostgreSQL/MySQL
+- Redis (for queues)
+- RabbitMQ/Kafka (for notifications microservice)
 ### 1. Clone the Repository
 ´´´
 git clone https://github.com/your-username/nestjs-chat.git  
